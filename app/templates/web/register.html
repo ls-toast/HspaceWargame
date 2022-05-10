@@ -1,0 +1,121 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <fieldset>
+        <legend>회원 가입</legend>
+
+        <div>
+            <div>
+                <label for="f-email">이메일</label>
+                <div>
+                    <input type="text" id="f-email" placeholder="이메일을 입력하세요." name="email" value="" required=""
+                        data-valid-name="이메일">
+                </div>
+            </div>
+            <div>
+                <label for="f-name">닉네임</label>
+                <div>
+                    <input type="text" id="f-name" placeholder="닉네임을(를) 입력하세요." name="display_name" value="" required=""
+                        data-valid-name="닉네임">
+                </div>
+            </div>
+            <div>
+                <label for="f-password">비밀번호</label>
+                <div>
+                    <input type="password" id="f-password" placeholder="비밀번호를 입력하세요. (8자 이상)" name="password"
+                        required="" data-valid-name="비밀번호">
+                </div>
+            </div>
+
+            <div>
+                <label for="f-password">비밀번호 확인</label>
+                <div>
+                    <input type="password" id="f-password" placeholder="비밀번호를 입력하세요." name="password2" required=""
+                        data-valid-name="비밀번호">
+
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="realname_text">실명</label>
+                    <div>
+                        <input type="text" name="realname_text" value="" data-valid-name="실명" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <label for="phone">연락처</label>
+                    <div>
+                        <input type="text" name="phone" value="" data-valid-name=""
+                            placeholder="연락처 (ex: 010-0000-0000)">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="birth_num">생년월일</label>
+                    <input type="text" name="birth_num" value="" data-valid-name="생년월일" placeholder="생년월일 (ex: yymmdd)">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="group_text">소속</label>
+                    <div>
+                        <input type="text" name="group_text" value="" data-valid-name="소속" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="hackergroup_text">소속그룹</label>
+                    <div>
+                        <input type="text" name="hackergroup_text" value="" data-valid-name="소속그룹" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="interesting_item">주관심분야</label>
+                    <label>
+                        <input type="radio" name="interesting_item" value="web">
+                        <span></span>
+                        <span>웹 해킹</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="interesting_item" value="sys">
+                        <span></span>
+                        <span>시스템 해킹</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="interesting_item" value="mob">
+                        <span></span>
+                        <span>모바일 해킹</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="interesting_item" value="for">
+                        <span></span>
+                        <span>포렌식</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="interesting_item" value="dev">
+                        <span></span>
+                        <span>개발</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div style="font-size:11px">* 가입은 승인 후 로그인 가능하며, 가입 거절 될 수 있습니다.</div>
+        <button type="submit">
+            <span>회원가입</span>
+        </button>
+    </fieldset>
+</body>
+
+</html>
