@@ -25,6 +25,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <!-- Wargame category -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,38 +41,43 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- Ranking category -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="/ranking" id="navbarScrollingDropdown" role="button"
                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Ranking
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Wargame</a></li>
-                                <li><a class="dropdown-item" href="#">Bug Bounty</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="/ranking/wargame">Wargame</a></li>
+                                <li><a class="dropdown-item" href="/ranking/bugbounty">Bug Bounty</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="nav-item dropdown btn">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                User
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li class="dropdown-item">유저이름</li>
-                                <li><a class="dropdown-item" href="#">회원정보수정</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">로그아웃</a></li>
-                            </ul>
-                        </button>
-                    </form>
                 </div>
+            </div>
+            <!-- After login -->
+            <form class="d-flex">
+                <button class="nav-item dropdown btn">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        User
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="navbarScrollingDropdown"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px;
+                        transform: translate3d(-60px, 48px, 0px);" data-popper-placement="bottom-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </button>
+            </form>
+            <!-- Before login -->
+            <div class="col-md-3 text-end me-3">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
             </div>
         </nav>
         <!-- 기본 템플릿 안에 삽입될 내용 Start -->
