@@ -5,4 +5,4 @@ register = Blueprint('register', __name__, url_prefix='/')
 
 @register.route('/register', methods=['GET'])
 def index():
-    return render_template('/web/register.html')
+    return render_template('/views/register.html')
