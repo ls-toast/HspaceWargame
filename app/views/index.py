@@ -3,6 +3,6 @@ from flask import current_app as app
 
 main = Blueprint('main', __name__, url_prefix='/')
 
-@main.route('/main', methods=['GET'])
+@main.route('/', methods=['GET'])
 def index():
     return render_template('/web/index.html')

@@ -2,10 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-from app.web.index import main as main
-from app.web.register import register as register
-from app.web.login import login as login
+from .views import index as main
+from .views import register as register
+from .views import login as login
 
-app.register_blueprint(main)
-app.register_blueprint(register)
-app.register_blueprint(login)
+app.register_blueprint(main.main)
+app.register_blueprint(register.register)
+app.register_blueprint(login.login)
